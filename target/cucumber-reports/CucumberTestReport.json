@@ -1,0 +1,173 @@
+[
+  {
+    "line": 1,
+    "elements": [
+      {
+        "before": [
+          {
+            "result": {
+              "duration": 3434468243,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Search.startUp()"
+            }
+          }
+        ],
+        "line": 2,
+        "name": "Perform an existing term search",
+        "description": "",
+        "id": "perform-term-searchs;perform-an-existing-term-search",
+        "after": [
+          {
+            "result": {
+              "duration": 810926141,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Search.tearDown()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 2847473511,
+              "status": "passed"
+            },
+            "line": 3,
+            "name": "User is in main page",
+            "match": {
+              "location": "Search.userIsInMainPage()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 1664107991,
+              "status": "passed"
+            },
+            "line": 4,
+            "name": "User fills out the term \"Microsoft\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Microsoft",
+                  "offset": 25
+                }
+              ],
+              "location": "Search.userFillsOutTheTerm(String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 71819900,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "The page shows title \"Microsoft\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Microsoft",
+                  "offset": 22
+                }
+              ],
+              "location": "Search.thePageShowsTitle(String)"
+            },
+            "keyword": "Then "
+          }
+        ]
+      },
+      {
+        "before": [
+          {
+            "result": {
+              "duration": 2532582821,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Search.startUp()"
+            }
+          }
+        ],
+        "line": 7,
+        "name": "Perform a non existing term search",
+        "description": "",
+        "id": "perform-term-searchs;perform-a-non-existing-term-search",
+        "after": [
+          {
+            "result": {
+              "duration": 770059410,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Search.tearDown()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 2369052811,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "User is in main page",
+            "match": {
+              "location": "Search.userIsInMainPage()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 1069999898,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "User fills out the term \"EQRWWOW\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "EQRWWOW",
+                  "offset": 25
+                }
+              ],
+              "location": "Search.userFillsOutTheTerm(String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 1141376,
+              "error_message": "cucumber.api.PendingException: TODO: implement me\r\n\tat stepdefinitions.Search.thePageShowsTheMessage(Search.java:34)\r\n\tat ✽.Then The page shows the message \"\"(Search.feature:10)\r\n",
+              "status": "pending"
+            },
+            "line": 10,
+            "name": "The page shows the message \"\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "",
+                  "offset": 28
+                }
+              ],
+              "location": "Search.thePageShowsTheMessage(String)"
+            },
+            "keyword": "Then "
+          }
+        ]
+      }
+    ],
+    "name": "Perform term searchs",
+    "description": "",
+    "id": "perform-term-searchs",
+    "keyword": "Feature",
+    "uri": "Search.feature"
+  }
+]
